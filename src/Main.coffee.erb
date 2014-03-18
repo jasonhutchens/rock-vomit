@@ -20,18 +20,18 @@ class Main extends Phaser.State
   preload:->  
     @game.stage.disableVisibilityChange=true
 
-    @game.stage.scale.pageAlignHorizontally = true
-    @game.stage.scale.pageAlignVertically = false
-    @game.stage.scale.setShowAll()
-    @game.stage.scale.refresh()
+    @game.scale.pageAlignHorizontally = true
+    @game.scale.pageAlignVertically = false
+    @game.scale.setShowAll()
+    @game.scale.refresh()
 
-    @game.stage.scale.enterLandscape.add =>
-      @game.stage.scale.setShowAll()
-      @game.stage.scale.refresh()
+    @game.scale.enterLandscape.add =>
+      @game.scale.setShowAll()
+      @game.scale.refresh()
 
-    @game.stage.scale.enterPortrait.add =>
-      @game.stage.scale.setShowAll()
-      @game.stage.scale.refresh()
+    @game.scale.enterPortrait.add =>
+      @game.scale.setShowAll()
+      @game.scale.refresh()
 
     message = "=== R O C K V O M I T ===\nis\nLOADING"
     style =
